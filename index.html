@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directorio de Congregaciones IPUC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="logo-ipuc-.webp" alt="IPUC Colombia" class="brand-logo" />
+        <div>
+          <h1>Iglesia Pentecostal Unida de Colombia</h1>
+          <p>Directorio de congregaciones</p>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Buscar departamento..." aria-label="Buscar departamento" />
+      </div>
+
+      <nav class="department-list" id="departmentList"></nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <button id="toggleSidebar" class="sidebar-toggle" aria-label="Mostrar u ocultar menú">☰</button>
+        <div>
+          <h2 id="mapTitle">Amazonas</h2>
+          <p id="mapDescription">Mapa de congregaciones de la IPUC en Amazonas.</p>
+        </div>
+      </header>
+
+      <section class="stats-banner">
+        <div class="stat-item">
+          <span class="stat-label">Total de congregaciones registradas</span>
+          <strong class="stat-value" id="totalCount">—</strong>
+        </div>
+      </section>
+
+      <section class="map-card">
+        <div class="iframe-wrapper">
+          <iframe id="mapFrame" src="https://www.google.com/maps/d/u/0/embed?mid=1MdmNiX7U1LJEpfmpsWDKd82QKP6OhM4&ehbc=2E312F" loading="lazy" title="Mapa de Amazonas" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="warning-banner">
+        <strong>Advertencia:</strong> Esta información puede presentar imprecisiones. Verifica los datos con las páginas oficiales de la <a href="https://ipuc.org.co/" target="_blank" rel="noopener noreferrer">IPUC</a> antes de planificar visitas o eventos.
+      </section>
+
+      <section class="info-grid">
+        <article>
+          <h3>Cómo usarlo</h3>
+          <p>Selecciona un departamento en el menú lateral para ver su mapa con las congregaciones registradas.</p>
+        </article>
+        <article>
+          <h3>Diseño responsive</h3>
+          <p>Funciona en móviles, tabletas y escritorios con un menú adaptativo y contenido enfocado.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

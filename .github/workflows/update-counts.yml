@@ -1,0 +1,33 @@
+name: Update congregation counts
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Cada lunes a las 06:00 UTC (ajústalo si quieres otra hora)
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run update script
+        run: |
+          python3 process-kmz.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore: actualizar conteos de congregaciones (autómata)'
+          file_pattern: |
+            department-counts.json
+            congregations.csv
+          branch: ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

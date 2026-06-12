@@ -1,0 +1,24 @@
+# Dependencias y caché
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+.venv/
+
+# Archivos de SO
+.DS_Store
+Thumbs.db
+
+# Notas locales
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Archivos generados (se regeneran automáticamente con el workflow)
+# Descomentar si prefieres no versionar estos archivos:
+# department-counts.json
+# congregations.csv
