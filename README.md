@@ -1,4 +1,4 @@
-Directorio de Congregaciones de la IPUC
+# Directorio de Congregaciones de la IPUC
 
 Página web moderna y responsiva que muestra el directorio de congregaciones de la Iglesia Pentecostal Unida de Colombia por departamento, con mapas interactivos y conteos dinámicos actualizados automáticamente.
 
