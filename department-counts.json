@@ -1,11 +1,11 @@
 {
-  "total": 3056,
+  "total": 3072,
   "departments": {
     "Amazonas": 3,
-    "Antioquia": 439,
+    "Antioquia": 443,
     "Arauca": 26,
     "Atlántico": 161,
-    "Bogotá D.C.": 166,
+    "Bogotá D.C.": 167,
     "Bolívar": 135,
     "Boyacá": 72,
     "Caldas": 59,
@@ -32,7 +32,7 @@
     "Sedes distritales, CAN y fundaciones": 15,
     "Sucre": 43,
     "Tolima": 110,
-    "Valle del Cauca": 295,
+    "Valle del Cauca": 306,
     "Vaupés": 0,
     "Vichada": 3
   },
